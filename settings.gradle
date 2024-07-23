@@ -1,1 +1,25 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        mavenLocal()
+        maven { url 'https://maven.fabric.io/public' }
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        mavenLocal()
+        maven { url "https://jitpack.io" }
+        maven{
+            url = "http://localhost:8081/repository/monady/"
+            allowInsecureProtocol = true
+        }
+    }
+}
+
+rootProject.name = "gb-mobile-android"
 include ':gameballsdk'
