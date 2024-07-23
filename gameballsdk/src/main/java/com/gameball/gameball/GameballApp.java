@@ -362,7 +362,7 @@ public class GameballApp
         registerPlayer(playerUniqueId, playerAttributes, referralCode, responseCallback);
     }
 
-    public void showProfile(final AppCompatActivity activity, @Nullable final String playerUniqueId, @Nullable String openDetail, @Nullable Boolean hideNavigation)
+    public void showProfile(final Activity activity, @Nullable final String playerUniqueId, @Nullable String openDetail, @Nullable Boolean hideNavigation)
     {
         SharedPreferencesUtils.getInstance().putOpenDetailPreference(openDetail);
         SharedPreferencesUtils.getInstance().putHideNavigationPreference(hideNavigation);
@@ -370,7 +370,7 @@ public class GameballApp
         GameballWidgetActivity.start(activity, playerUniqueId, null);
     }
     
-    public void showProfile(final AppCompatActivity activity, @Nullable final String playerUniqueId, @Nullable String openDetail, @Nullable Boolean hideNavigation, @Nullable String widgetUrlPrefix)
+    public void showProfile(final Activity activity, @Nullable final String playerUniqueId, @Nullable String openDetail, @Nullable Boolean hideNavigation, @Nullable String widgetUrlPrefix)
     {
         SharedPreferencesUtils.getInstance().putOpenDetailPreference(openDetail);
         SharedPreferencesUtils.getInstance().putHideNavigationPreference(hideNavigation);
