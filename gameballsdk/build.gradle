@@ -66,30 +66,3 @@ dependencies {
 
     implementation 'com.github.cachapa:Expandablelayout:2.9.2'
 }
-
-// afterEvaluate{
-//     publishing {
-//         repositories {
-//             maven {
-//                 credentials {
-//                     username USERNAME
-//                     password PASSWORD
-//                 }
-//                 url = MAVEN_REPOSITORY_URL
-//                 allowInsecureProtocol = true
-//             }
-//         }
-//         publications {
-//             mavenRelease(MavenPublication) {
-//                 from components.release
-//                 pom{
-//                     groupId = GROUP
-//                     artifactId = POM_ARTIFACT_ID
-//                     version = VERSION_NAME
-//                     name = POM_NAME
-//                     packaging = POM_PACKAGING
-//                 }
-//             }
-//         }
-//     }
-// }
