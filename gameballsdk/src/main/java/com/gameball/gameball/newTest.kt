@@ -11,7 +11,7 @@ class newTest(private val name: String) {
     }
 
     @Composable
-    fun hello(){
-        Text(text=greet())
+    fun hello(name: String){
+        Text(text=name)
     }
 }
