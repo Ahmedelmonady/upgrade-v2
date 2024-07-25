@@ -11,8 +11,10 @@ class newTest(private val name: String) {
         return "Hello, $name"
     }
 
-    @Composable
-    fun hello(name: String){
-        Text(text=name)
-    }
+
+}
+
+@Composable
+fun hello(name: String){
+    Text(text=name)
 }
